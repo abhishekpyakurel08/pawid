@@ -1,0 +1,80 @@
+export const ROLES = {
+  ADMIN: 'ADMIN',
+  VOLUNTEER: 'VOLUNTEER',
+} as const;
+
+export type UserRole = (typeof ROLES)[keyof typeof ROLES];
+
+export const DOG_SPECIES = {
+  DOG: 'DOG',
+} as const;
+
+export const DOG_SEX = {
+  MALE: 'MALE',
+  FEMALE: 'FEMALE',
+  UNKNOWN: 'UNKNOWN',
+} as const;
+
+export const DOG_STATUS = {
+  ACTIVE: 'ACTIVE',
+  MISSING: 'MISSING',
+  DECEASED: 'DECEASED',
+  ADOPTED: 'ADOPTED',
+  INACTIVE: 'INACTIVE',
+} as const;
+
+export const STERILIZATION_STATUS = {
+  STERILIZED: 'STERILIZED',
+  NOT_STERILIZED: 'NOT_STERILIZED',
+  UNKNOWN: 'UNKNOWN',
+} as const;
+
+export const VACCINATION_STATUS = {
+  VACCINATED: 'VACCINATED',
+  NOT_VACCINATED: 'NOT_VACCINATED',
+  UNKNOWN: 'UNKNOWN',
+} as const;
+
+export const SIGHTING_CONDITION = {
+  HEALTHY: 'HEALTHY',
+  INJURED: 'INJURED',
+  SICK: 'SICK',
+  UNKNOWN: 'UNKNOWN',
+} as const;
+
+export const LOCATION_SOURCE = {
+  CURRENT_LOCATION: 'CURRENT_LOCATION',
+  MAP_SELECTION: 'MAP_SELECTION',
+  MANUAL_ENTRY: 'MANUAL_ENTRY',
+} as const;
+
+export const REPORT_TYPE = {
+  INJURED: 'INJURED',
+  MISSING: 'MISSING',
+  ABUSE: 'ABUSE',
+  DECEASED: 'DECEASED',
+  WRONG_INFORMATION: 'WRONG_INFORMATION',
+  OTHER: 'OTHER',
+} as const;
+
+export const REPORT_STATUS = {
+  PENDING: 'PENDING',
+  REVIEWING: 'REVIEWING',
+  RESOLVED: 'RESOLVED',
+  REJECTED: 'REJECTED',
+} as const;
+
+export const HEALTH_RECORD_TYPE = {
+  VACCINATION: 'VACCINATION',
+  STERILIZATION: 'STERILIZATION',
+  CHECKUP: 'CHECKUP',
+  TREATMENT: 'TREATMENT',
+  INJURY: 'INJURY',
+  OTHER: 'OTHER',
+} as const;
+
+export const PAGINATION = {
+  DEFAULT_PAGE: 1,
+  DEFAULT_LIMIT: 20,
+  MAX_LIMIT: 100,
+};
